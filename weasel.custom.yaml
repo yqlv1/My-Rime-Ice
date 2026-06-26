@@ -1,0 +1,44 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.17.4
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Mon Jun 22 22:18:14 2026"
+  rime_version: 1.13.1
+patch:
+  "style/color_scheme": win11
+  style/+:
+    label_format: "%s."
+    inline_preedit: true
+    label_font_face: "JetBrains Mono, Microsoft YaHei"
+    font_point: 12
+    label_font_point: 8
+    comment_font_point: 12
+    horizontal: true
+    hover_type: none
+    layout:
+      align_type: bottom
+      max_width: 1200
+      min_width: 10
+      border_width: 1.5
+      margin_x: 14
+      margin_y: 8
+      hilite_spacing: 0
+      hilite_padding_y: 4
+      hilite_padding_x: 10
+      shadow_radius: 6
+      corner_radius: 8
+      round_corner: 8
+      shadow_offset_x: 2
+      shadow_offset_y: 6
+  preset_color_schemes/+:
+    win11:
+      name: "Win11-Fresh"
+      text_color: 0x555555                   
+      label_color: 0x999999                  
+      back_color: 0xefffef                   
+      border_color: 0xdfefdf                 
+      hilited_candidate_text_color: 0x1a3a17   
+      hilited_candidate_back_color: 0xe3f3e1   
+      hilited_label_color: 0x777777          
+      hilited_mark_color: 0xe2904a           
+      shadow_color: 0x20000000                 

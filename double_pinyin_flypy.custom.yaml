@@ -1,0 +1,43 @@
+patch:
+  "translator/dictionary": rime_ice_custom
+
+  "engine/segmentors/@before 0": affix_segmentor@jp_kana
+  "engine/translators/@before 0": lua_translator@jp_kana_translator
+  "engine/translators/@before 1": table_translator@hiragana
+  "engine/translators/@before 2": table_translator@katakana
+  # "engine/translators":
+  #   - punct_translator
+  #   - script_translator
+  #   - lua_translator@*date_translator
+  #   - lua_translator@*lunar
+  #   - lua_translator@*uuid
+  #   - lua_translator@jp_kana_translator
+  #   - table_translator@custom_phrase
+  #   - table_translator@melt_eng
+  #   - table_translator@cn_en
+  #   - table_translator@radical_lookup
+  #   - table_translator@hiragana
+  #   - table_translator@katakana
+  #   - lua_translator@*unicode
+  #   - lua_translator@*number_translator
+  #   - lua_translator@*calc_translator
+  #   - lua_translator@*force_gc
+  hiragana: # H进入平假名模式
+    dictionary: ""
+    user_dict: jp_dicts/hiragana  
+    db_class: stabledb
+    enable_completion: false 
+    enable_sentence: false   
+    initial_quality: 99      
+  katakana: # K进入片假名模式
+    dictionary: ""
+    user_dict: jp_dicts/katakana  
+    db_class: stabledb
+    enable_completion: false 
+    enable_sentence: false   
+    initial_quality: 99    
+  jp_kana:
+    tag: jp_kana
+    prefix: "ja"
+    tips: "〔日文〕"
+  "recognizer/patterns/jp_kana": "^ja[a-z]*$"

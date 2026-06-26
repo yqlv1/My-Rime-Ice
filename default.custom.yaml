@@ -1,0 +1,21 @@
+patch:
+  # 1. 启用方案列表
+  schema_list:
+    - schema: double_pinyin_flypy  # 小鹤双拼
+    - schema: luna_pinyin          # 朙月拼音（全拼）
+
+  # 2. 自定义全局快捷键
+  "key_binder/bindings/+":
+    # 针对雾凇拼音等现代配置，开关名通常是 traditionalization
+    - { accept: "Control+Shift+F", toggle: traditionalization, when: always }
+
+    # 逗号、句号翻页
+    - { accept: comma, send: Page_Up, when: has_menu }
+    - { accept: period, send: Page_Down, when: has_menu }
+
+
+    # Ctrl + Shift + S：切换输入方案
+    - { accept: "Control+Shift+S", select: .next, when: always }
+  menu:
+    page_size: 5
+
