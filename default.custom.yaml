@@ -2,7 +2,7 @@ patch:
   # 1. 启用方案列表
   schema_list:
     - schema: double_pinyin_flypy  # 小鹤双拼
-    - schema: luna_pinyin          # 朙月拼音（全拼）
+    - schema: rime_ice          # 雾凇拼音（全拼）
 
   # 2. 自定义全局快捷键
   "key_binder/bindings/+":
@@ -13,6 +13,9 @@ patch:
     - { accept: comma, send: Page_Up, when: has_menu }
     - { accept: period, send: Page_Down, when: has_menu }
 
+    # 减号、加号移动候选项
+    - { accept: minus, send: Up, when: has_menu }
+    - { accept: equal, send: Down, when: has_menu }
 
     # Ctrl + Shift + S：切换输入方案
     - { accept: "Control+Shift+S", select: .next, when: always }

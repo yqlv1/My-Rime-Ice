@@ -1,0 +1,4 @@
+# radical_pinyin.custom.yaml
+patch:
+  speller/algebra:
+    __include: radical_pinyin.schema.yaml:/algebra_double_pinyin_flypy
