@@ -1,0 +1,17 @@
+# Files deployed to the Rime user directory as NTFS hard links.
+# Paths are relative to the repository root. Keep this list in sync when adding
+# or removing a personal Rime configuration file.
+custom_phrase_double.txt
+default.custom.yaml
+double_pinyin_flypy.custom.yaml
+melt_eng.custom.yaml
+radical_pinyin.custom.yaml
+rime.lua
+rime_ice_custom.dict.yaml
+weasel.custom.yaml
+cn_dicts/moe.dict.yaml
+jp_dicts/hiragana.txt
+jp_dicts/katakana.txt
+lua/convert_format.lua
+lua/convert_kana.lua
+lua/jp_kana_translator.lua
