@@ -56,7 +56,7 @@
 ヲ	Kwo
 ン	Kn
 ン	Knn
-ー	Kln
+ー	Kev
 
 ガ	Kga
 ギ	Kgi
