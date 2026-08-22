@@ -40,4 +40,4 @@ patch:
     tag: jp_kana
     prefix: "ja"
     tips: "〔日文〕"
-  "recognizer/patterns/jp_kana": "^ja[a-z]*$"
+  "recognizer/patterns/jp_kana": "^ja[a-z']*$"

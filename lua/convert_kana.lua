@@ -48,7 +48,7 @@ local function kata_t(t)
   local f_21 = "xform/ﾊﾟ/パ/"
   local f_22 = "xform/ﾋﾟ/ピ/"
   local f_23 = "xform/ﾌﾟ/プ/"
-  local f_24 = "xform/ﾍﾟ/ぺ/"
+  local f_24 = "xform/ﾍﾟ/ペ/"
   local f_25 = "xform/ﾎﾟ/ポ/"
   local f_26 = "xform/ｳﾞ/ヴ/"
   local f_27 = "xform/ﾜﾞ/ヷ/"
@@ -449,7 +449,7 @@ local function halfwidth_kata_t(t)
   -- t = string.gsub(t, "zyu", "ｼﾞｭ")  --增
   -- t = string.gsub(t, "zyo", "ｼﾞｮ")  --增
   -- t = string.gsub(t, "zya", "ｼﾞｬ")  --增
-  t = string.gsub(t, "zzi", "ｯｼﾞｬ")  --增
+  t = string.gsub(t, "zzi", "ｯｼﾞ")  --增
   t = string.gsub(t, "jyu", "ｼﾞｭ")  --增
   t = string.gsub(t, "jyo", "ｼﾞｮ")  --增
   t = string.gsub(t, "jya", "ｼﾞｬ")  --增

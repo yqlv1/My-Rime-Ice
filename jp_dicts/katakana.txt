@@ -225,7 +225,6 @@
 ッテ	Ktte
 ット	Ktto
 ッハ	Khha
-ッハ	Khha
 ッヒ	Khhi
 ッフ	Khfu
 ッフ	Khhu
@@ -354,7 +353,6 @@
 ックェ	Kqqwe
 ックォ	Kkkwo
 ックォ	Kqqwo
-グァ	Kggwa
 ッグァ	Kggwa
 ッグィ	Kggwi
 ッグゥ	Kggwu
