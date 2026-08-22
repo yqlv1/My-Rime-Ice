@@ -1,5 +1,6 @@
 -- Rime用户目录/lua/jp_kana_translator.lua
 local c_k = require("convert_kana")
+local kanji_map = require("jp_kanji_map")
 
 local function translate(input, seg, env)
     -- 只在带有特定 tag 时触发（我们在 yaml 中定义前缀 ja 触发此 tag）
@@ -17,7 +18,13 @@ local function translate(input, seg, env)
         yield(Candidate("jp_hira", seg.start, seg._end, c_k.hira_t(hw), "〔平假名〕"))
         yield(Candidate("jp_kata", seg.start, seg._end, c_k.kata_t(hw), "〔片假名〕"))
         yield(Candidate("jp_hw", seg.start, seg._end, hw, "〔半角片假〕"))
-        yield(Candidate("jp_roma", seg.start, seg._end, c_k.revise_t(romaji), "〔罗马字〕"))
+
+        local kanji_candidates = kanji_map[romaji]
+        if kanji_candidates then
+            for _, text in ipairs(kanji_candidates) do
+                yield(Candidate("jp_kanji", seg.start, seg._end, text, "〔日文汉字〕"))
+            end
+        end
     else
         yield(Candidate("jp_error", seg.start, seg._end, romaji, "〔无此假名〕"))
     end

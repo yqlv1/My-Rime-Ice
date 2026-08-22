@@ -14,4 +14,5 @@ jp_dicts/hiragana.txt
 jp_dicts/katakana.txt
 lua/convert_format.lua
 lua/convert_kana.lua
+lua/jp_kanji_map.lua
 lua/jp_kana_translator.lua

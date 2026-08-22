@@ -15,6 +15,7 @@
 - Prefer `.custom.yaml` patches and personal files over editing upstream schemas.
 - When adding or removing a personal file that must appear in the Rime directory, update `rime-links.txt` in the same change.
 - Treat `cn_dicts/moe.dict.yaml` as a large generated/imported dictionary. Do not reformat or rewrite it without a specific reason.
+- Keep the curated `ja`-mode Kanji exceptions small and explicit in `lua/jp_kanji_map.lua`. Kana candidates must remain positions 1-3; mapped Kanji are appended from position 4.
 - For a downloaded replacement of the Moe dictionary, use `scripts/update-moe-dict.ps1`. It overwrites the existing file contents so an intact hard link is preserved, then repairs all manifest links.
 
 ## Verification
