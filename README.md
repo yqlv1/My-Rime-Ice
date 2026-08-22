@@ -1,6 +1,6 @@
 # Rime个人配置
 
-这是我个人的[Rime](https://rime.im/)输入法配置文件，基于[小狼毫](https://github.com/rime/weasel)和[雾凇拼音](https:/./github.com/iDvel/rime-ice)。本仓库用于符合我个人输入习惯的配置文件的备份，仅包含自定义的配置文件。
+这是我个人的[Rime](https://rime.im/)输入法配置文件，基于[小狼毫](https://github.com/rime/weasel)和[雾凇拼音](https://github.com/iDvel/rime-ice)。本仓库用于符合我个人输入习惯的配置文件的备份，仅包含自定义的配置文件。
 
 ---
 
