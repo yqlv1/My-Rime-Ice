@@ -40,6 +40,7 @@ return {
     tetsu = { "鉄" },
     touge = { "峠" },
     tsubaki = { "椿" },
+    tsumugi = { "紬" },
     tsuji = { "辻" },
     zu = { "図" },
 }
